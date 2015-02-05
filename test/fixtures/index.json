@@ -54,13 +54,18 @@
     "checkModule": true,
     "code": 1,
     "errors": [
-      "Could not require() the module."
+      "package.json does not have a .version property.",
+      "Could not require() the module.",
+      "No valid package metadata files found."
     ]
   },
   "empty directory without checking the module": {
     "path": "no-module",
     "checkModule": false,
-    "code": 0,
-    "errors": []
+    "code": 1,
+    "errors": [
+      "package.json does not have a .version property.",
+      "No valid package metadata files found."
+    ]
   }
 }

@@ -13,7 +13,12 @@ var errorsIn = function(root, checkModule) {
     var joinedPath = path.join(root, file);
     if (fs.existsSync(joinedPath)) {
       try {
-        versions.push([file, require(joinedPath).version]);
+        var json = require(joinedPath);
+        if (json.hasOwnProperty('version')) {
+          versions.push([file, json.version]);
+        } else {
+          errors.push(file + ' does not have a .version property.');
+        }
       } catch (e) {
         errors.push(file + ' is not valid JSON.');
       }
