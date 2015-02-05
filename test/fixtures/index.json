@@ -1,0 +1,66 @@
+{
+  "pristine repository": {
+    "path": "pristine",
+    "checkModule": true,
+    "code": 0,
+    "errors": []
+  },
+  "two-way mismatch": {
+    "path": "two-way",
+    "checkModule": false,
+    "code": 1,
+    "errors": [
+      "bower.json's version (0.0.2) does not match package.json's (0.0.1)."
+    ]
+  },
+  "three-way mismatch": {
+    "path": "three-way",
+    "checkModule": false,
+    "code": 1,
+    "errors": [
+      "bower.json's version (0.0.1) does not match component.json's (0.0.2).",
+      "bower.json's version (0.0.1) does not match package.json's (0.0.3).",
+      "component.json's version (0.0.2) does not match package.json's (0.0.3)."
+    ]
+  },
+  "module-package mismatch": {
+    "path": "module-package",
+    "checkModule": true,
+    "code": 1,
+    "errors": [
+      "The module's version (0.0.1) does not match package.json's (0.0.2)."
+    ]
+  },
+  "invalid JSON": {
+    "path": "bad-json",
+    "checkModule": false,
+    "code": 1,
+    "errors": [
+      "package.json is not valid JSON.",
+      "No valid package metadata files found."
+    ]
+  },
+  "no version property": {
+    "path": "no-version-property",
+    "checkModule": true,
+    "code": 1,
+    "errors": [
+      "The module does not have a .version property.",
+      "No valid package metadata files found."
+    ]
+  },
+  "empty directory": {
+    "path": "no-module",
+    "checkModule": true,
+    "code": 1,
+    "errors": [
+      "Could not require() the module."
+    ]
+  },
+  "empty directory without checking the module": {
+    "path": "no-module",
+    "checkModule": false,
+    "code": 0,
+    "errors": []
+  }
+}

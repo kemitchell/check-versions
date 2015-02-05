@@ -1,0 +1,9 @@
+Ensure consistent version metadata across JavaScript package managers
+
+Usage:
+  check-versions [PACKAGE_ROOT] [--check-module]
+  check-versions -h | --help
+  check-versions --version
+
+Options:
+  -m, --check-module  Check the .version property of the module
