@@ -1,4 +1,7 @@
 {
+  "name": "check-versions",
+  "description": "Ensure consistent version metadata",
+  "version": "0.0.1",
   "author": "Kelly Martin",
   "bin": "source/index.js",
   "bugs": "https://github.com/kemitchell/check-versions/issues",
@@ -13,7 +16,6 @@
     "docopt": "^0.4.1",
     "foreach-combination": "^1.0.0"
   },
-  "description": "Ensure consistent version metadata",
   "devDependencies": {
     "chai": "^1.10.0",
     "istanbul": "^0.3.5",
@@ -30,7 +32,6 @@
   ],
   "license": "Apache-2.0",
   "main": "source/index.js",
-  "name": "check-versions",
   "preferGlobal": true,
   "repository": {
     "type": "git",
@@ -42,6 +43,5 @@
     "pre-commit": "npm run lint && npm run coverage",
     "test": "mocha",
     "travis-ci": "npm run pre-commit"
-  },
-  "version": "0.0.1"
+  }
 }
