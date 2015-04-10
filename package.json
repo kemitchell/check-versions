@@ -1,17 +1,14 @@
 {
   "name": "check-versions",
   "description": "Ensure consistent version metadata",
-  "version": "0.0.1",
-  "author": "Kelly Martin",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kyle E. Mitchell",
+    "email": "kyle@kemitchell.com",
+    "url": "http://kemitchell.com/"
+  },
   "bin": "source/index.js",
   "bugs": "https://github.com/kemitchell/check-versions/issues",
-  "contributors": [
-    {
-      "name": "Kyle E. Mitchell",
-      "email": "kyle@kemitchell.com",
-      "url": "http://kemitchell.com/"
-    }
-  ],
   "dependencies": {
     "docopt": "^0.4.1",
     "foreach-combination": "^1.0.0"
