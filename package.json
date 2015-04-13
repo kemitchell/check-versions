@@ -1,6 +1,6 @@
 {
   "name": "check-versions",
-  "description": "Ensure consistent version metadata",
+  "description": "ensure consistent version metadata",
   "version": "1.0.0",
   "author": {
     "name": "Kyle E. Mitchell",
